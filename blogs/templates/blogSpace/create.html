@@ -1,0 +1,8 @@
+<form action="{%url 'blogs:create'%}">
+    {%csrf_token%}
+    <label for="title">Title:</label>
+    <input type="text" name="title">
+    <label for="content">Content</label>
+    <textarea name="content"></textarea>
+    <input type="submit" value="Submit">
+</form>
